@@ -1,0 +1,39 @@
+\name{helper_functions-package}
+\alias{helper_functions-package}
+\alias{helper_functions}
+\docType{package}
+\title{
+helper functions, functions and wrappers for ggplot2, pheatmap2, and table functions etc.
+}
+\description{
+helper functions, functions and wrappers for ggplot2, pheatmap2, table functions, Venn diagrams etc
+}
+\details{
+\tabular{ll}{
+Package: \tab helper_functions\cr
+Type: \tab Package\cr
+Version: \tab 1.0\cr
+Date: \tab 2016-01-31\cr
+License: \tab What license is it under?\cr
+}
+~~ An overview of how to use the package, including the most important functions ~~
+}
+\author{
+Beryl
+
+Maintainer: Who to complain to <yourfault@somewhere.net>
+~~ The author and/or maintainer of the package ~~
+}
+\references{
+~~ Literature or other references for background information ~~
+}
+~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R ~~
+~~ documentation directory ~~
+\keyword{ package }
+\seealso{
+~~ Optional links to other man pages, e.g. ~~
+~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+}
+\examples{
+~~ simple examples of the most important functions ~~
+}
