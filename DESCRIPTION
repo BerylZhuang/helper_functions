@@ -1,6 +1,6 @@
 Package: HelperFunctions
 Title: Beryl's helper functions
-Version: 0.9.0
+Version: 0.9.1
 Author: Beryl Zhuang <beryl.c.zhuang@gmail.com>
 Description: convertToFactors(), densPlotMultiLines(), excludeMatch(), filterContain(), filterLess(), filterMatch(), ggColorHue(), mapBindAllColumns(), mapValue(), multiplot(), noWarnings(), orderCol(), pheatmapNA(), plotBar(), plotBox(), plotDens(), plotHisto(), plotXY(), rbindAllColumns(), rbindDF(), rmDup(), venn.diagram2(), vennDiagram2(), writeTable()
 Depends:

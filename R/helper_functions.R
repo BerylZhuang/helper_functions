@@ -283,16 +283,16 @@ mapBindAllColumns <- function(x, y, id_col='') {
         return(NULL)
     }
     
-    if(class(x) != "data.frame"){
-        stop(paste0("Input x is a ", class(x), ". A data.frame is required."))
-    }
-    if(class(y) != "data.frame"){
-        stop(paste0("Input y is a ", class(y), ". A data.frame is required."))
-    }
-    
-    if(class(y) != "data.frame"){
-        stop(paste0("Input y is a ", class(y), ". A data.frame is required."))
-    }
+    # if(class(x) != "data.frame"){
+    #     stop(paste0("Input x is a ", class(x), ". A data.frame is required."))
+    # }
+    # if(class(y) != "data.frame"){
+    #     stop(paste0("Input y is a ", class(y), ". A data.frame is required."))
+    # }
+    # 
+    # if(class(y) != "data.frame"){
+    #     stop(paste0("Input y is a ", class(y), ". A data.frame is required."))
+    # }
     
     if(!id_col == ""){
         if(!(id_col %in% colnames(x))){
