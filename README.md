@@ -4,7 +4,8 @@ some helper functions for my project
 
 
 ```
+install.packages('scales')
 library(devtools)
 install_github("BerylZhuang/helper_functions")
-Library(HelperFunctions)
+library(HelperFunctions)
 ```
