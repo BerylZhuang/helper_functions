@@ -207,8 +207,8 @@ excludeMatch <- function(df, column, value){
 #' 
 #' Table Functions: rbind two data frames x, y and include all columns from both data frame
 #' 
-#' @param x (df), can be NULL
-#' @param y (df), can be NULL
+#' @param x (df), if NULL, then return the other df.
+#' @param y (df), if NULL, then return the other df.
 #' @note
 #' If one of the input is null, then return the non-NULL df. 
 #' No mapping of the same rows. All rows are added. NA to missing values.
@@ -221,7 +221,7 @@ excludeMatch <- function(df, column, value){
 rbindAllColumns <- function(x, y) {
     
     ## check if there's a null input
-    (index <- which(is.null(x), is.null(y)))
+    (index <- which(c(is.null(x), is.null(y))))
     if(length(index) ==1){ ## if one is null
         non_null_index <- setdiff(1:2, index)
         return(list(x,y)[[non_null_index]])
@@ -247,8 +247,8 @@ rbindAllColumns <- function(x, y) {
 #' 
 #' Table Functions: rbind two data frames x, y and include all columns from both data frame
 #' 
-#' @param x (df), can be NULL
-#' @param y (df), can be NULL
+#' @param x (df), if NULL, then return the other df.
+#' @param y (df), if NULL, then return the other df.
 #' @param id_col [optional] (str) a column that are shared between x and y and must have unique values within each df. 
 #' If not specified, the row.names of x and y are used for the match
 #' @note
@@ -262,7 +262,6 @@ rbindAllColumns <- function(x, y) {
 #' @examples
 #' mapBindAllColumns(x, y, id_col = "match_col")
 
-
 mapBindAllColumns <- function(x, y, id_col='') {
     ## INPUT:
     ##    -x, y are dataframes
@@ -275,7 +274,7 @@ mapBindAllColumns <- function(x, y, id_col='') {
     
     
     ## check if there's a null input
-    (index <- which(is.null(x), is.null(y)))
+    (index <- which(c(is.null(x), is.null(y))))
     if(length(index) ==1){ ## if one is null
         non_null_index <- setdiff(1:2, index)
         return(list(x,y)[[non_null_index]])
@@ -283,16 +282,6 @@ mapBindAllColumns <- function(x, y, id_col='') {
         return(NULL)
     }
     
-    # if(class(x) != "data.frame"){
-    #     stop(paste0("Input x is a ", class(x), ". A data.frame is required."))
-    # }
-    # if(class(y) != "data.frame"){
-    #     stop(paste0("Input y is a ", class(y), ". A data.frame is required."))
-    # }
-    # 
-    # if(class(y) != "data.frame"){
-    #     stop(paste0("Input y is a ", class(y), ". A data.frame is required."))
-    # }
     
     if(!id_col == ""){
         if(!(id_col %in% colnames(x))){
@@ -359,6 +348,7 @@ mapBindAllColumns <- function(x, y, id_col='') {
     }
     return(df)
 }
+
 
 #' convertToFactors()
 #' 

@@ -7,9 +7,9 @@
 mapBindAllColumns(x, y, id_col = "")
 }
 \arguments{
-\item{x}{(df), can be NULL}
+\item{x}{(df), if NULL, then return the other df.}
 
-\item{y}{(df), can be NULL}
+\item{y}{(df), if NULL, then return the other df.}
 
 \item{id_col}{[optional] (str) a column that are shared between x and y and must have unique values within each df. 
 If not specified, the row.names of x and y are used for the match}

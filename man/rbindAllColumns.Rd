@@ -7,9 +7,9 @@
 rbindAllColumns(x, y)
 }
 \arguments{
-\item{x}{(df), can be NULL}
+\item{x}{(df), if NULL, then return the other df.}
 
-\item{y}{(df), can be NULL}
+\item{y}{(df), if NULL, then return the other df.}
 }
 \value{
 a combined df with all the columns from x and y.
