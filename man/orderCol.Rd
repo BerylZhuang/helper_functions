@@ -4,12 +4,12 @@
 \alias{orderCol}
 \title{orderCol()}
 \usage{
-orderCol(df, cols)
+orderCol(df, cols, decreasing = F)
 }
 \arguments{
 \item{df}{input df}
 
-\item{cols}{column names in strings (add - if want to sort by descending order()only for numeric )}
+\item{cols}{column names in strings (add - if want to sort by descending order()only for numeric ), use decreasing =T for other type}
 }
 \description{
 reorder df by specified columns

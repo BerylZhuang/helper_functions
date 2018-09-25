@@ -4,8 +4,9 @@
 \alias{plotHisto}
 \title{plotHisto()}
 \usage{
-plotHisto(df, column, palette_defined = F, palette = "", plt_alpha = 0.4,
-  group = "", title = "", facet_gp = "", x_angle = 45, ...)
+plotHisto(df, column, palette_defined = F, palette = "",
+  plt_alpha = 0.4, group = "", title = "", facet_gp = "",
+  x_angle = 45, ...)
 }
 \arguments{
 \item{df}{A data.frame}

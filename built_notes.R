@@ -3,7 +3,7 @@ library("roxygen2")
 
 ## notes: make sure tab is 4 spaces (Tools -> global options -> code editting)
 #Build -> Configure build tools -> Code editing: tab width =4
-#Build -> Configure build tools -> Build Tools -> check the box: Generate documenttion with roxygen -> Configure -> check all 6 boxes
+#Build -> Configure build tools -> Build Tools -> check the box: Generate documention with roxygen -> Configure -> check all 6 boxes
 
 
 setwd("~/git/bin/helper_functions/")

@@ -4,16 +4,17 @@
 \alias{venn.diagram2}
 \title{venndiagram2()}
 \usage{
-venn.diagram2(x, filename, height = 3000, width = 3000, resolution = 500,
-  imagetype = "png", units = "px", compression = "lzw", na = "stop",
-  main = NULL, sub = NULL, main.pos = c(0.5, 1.05),
-  main.fontface = "plain", main.fontfamily = "Arial", main.col = "black",
-  main.cex = 1.5, main.just = c(0.5, 1), sub.pos = c(0.5, 1.05),
-  sub.fontface = "plain", sub.fontfamily = "Arial", sub.col = "black",
-  sub.cex = 1, sub.just = c(0.5, 1), category.names = names(x),
-  force.unique = TRUE, print.mode = "raw", sigdigs = 3,
-  direct.area = FALSE, area.vector = 0, hyper.test = FALSE,
-  total.population = NULL, ...)
+venn.diagram2(x, filename, height = 3000, width = 3000,
+  resolution = 500, imagetype = "png", units = "px",
+  compression = "lzw", na = "stop", main = NULL, sub = NULL,
+  main.pos = c(0.5, 1.05), main.fontface = "plain",
+  main.fontfamily = "Arial", main.col = "black", main.cex = 1.5,
+  main.just = c(0.5, 1), sub.pos = c(0.5, 1.05),
+  sub.fontface = "plain", sub.fontfamily = "Arial",
+  sub.col = "black", sub.cex = 1, sub.just = c(0.5, 1),
+  category.names = names(x), force.unique = TRUE, print.mode = "raw",
+  sigdigs = 3, direct.area = FALSE, area.vector = 0,
+  hyper.test = FALSE, total.population = NULL, ...)
 }
 \value{
 a venn diagram

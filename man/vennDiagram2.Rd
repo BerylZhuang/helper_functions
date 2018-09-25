@@ -4,8 +4,8 @@
 \alias{vennDiagram2}
 \title{vennDiagram2()}
 \usage{
-vennDiagram2(input_ls, title = "", col_palette = RColorBrewer::brewer.pal(9,
-  "Set1"), ...)
+vennDiagram2(input_ls, title = "",
+  col_palette = RColorBrewer::brewer.pal(9, "Set1"), ...)
 }
 \arguments{
 \item{input_ls}{A list, e.g. input_ls = list(list1 = c("A", "B", "C"), list2= c("A", "B", "D"))}

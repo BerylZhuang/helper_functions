@@ -5,8 +5,8 @@
 \title{plotDens()}
 \usage{
 plotDens(df, column, palette_defined = F, palette = "", group = "",
-  title = "", facet_gp = "", x_angle = 45, text_size = 8, log_x = F,
-  log_y = F, plt_alpha = 0.4, line_size = 1, ...)
+  title = "", facet_gp = "", x_angle = 45, text_size = 8,
+  log_x = F, log_y = F, plt_alpha = 0.4, line_size = 1, ...)
 }
 \arguments{
 \item{df}{A data.frame}

@@ -4,8 +4,8 @@
 \alias{writeTable}
 \title{writeTable()}
 \usage{
-writeTable(df, f_out, msg = "", quote = F, sep = "\\t", row.names = F,
-  file_append = F, ...)
+writeTable(df, f_out, msg = "", quote = F, sep = "\\t",
+  row.names = F, file_append = F, ...)
 }
 \arguments{
 \item{...}{other param in write.table()}

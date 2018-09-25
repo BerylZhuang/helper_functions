@@ -767,7 +767,7 @@ vennDiagram2 <- function(input_ls, title="", col_palette = RColorBrewer::brewer.
 #' reorder df by specified columns
 #' 
 #' @param df input df
-#' @param cols column names in strings (add - if want to sort by descending order()only for numeric )
+#' @param cols column names in strings (add - if want to sort by descending order()only for numeric ), use decreasing =T for other type
 #' @export
 #' @examples
 #' df <- data.frame(col1 = c('a', 'a', 'b','b'),
@@ -776,8 +776,13 @@ vennDiagram2 <- function(input_ls, title="", col_palette = RColorBrewer::brewer.
 #' cols = c('col1', 'col2')
 #' orderCol(df, cols)
 #' orderCol(df, '-col3')
-orderCol <- function(df, cols){
-    return(eval(parse(text= paste0("df[with(df, order(", paste0(cols, collapse = ','), ")), ]"))))
+orderCol <- function(df, cols, decreasing = F){
+    if(decreasing){
+        cmd <- paste0("df[with(df, order(", paste0(cols, collapse = ','), ", decreasing = T)), ]")
+    }else{
+        cmd <- paste0("df[with(df, order(", paste0(cols, collapse = ','), ")), ]")
+    }
+    return(eval(parse(text= cmd)))
 }
 
 
